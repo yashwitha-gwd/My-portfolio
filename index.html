@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        nav {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #444;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .cert-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+}
+
+        .skills span {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+        a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Yashwitha N L</h1>
+        <p> Student Masters in Data Science | ML | Data Analytics | Data Visualization <br> Data Modeling | Tableau |
+            Excel | Python</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am a passionate Data Science student interested in Machine Learning,
+                Data Analysis, and building real-world projects.I am always curious to learn more and more about new
+                concepts,and applying that knowledge in real world problems .
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card skills">
+            <span>Data Analysis</span>
+            <span>Data Visualization</span>
+            <span>Spreadsheet </span>
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>HTML CSS</span>
+            <span>Web Desighn</span>
+            <span>Tableau</span>
+            <span>SQL</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Student Performance Early Warning System(Risk Level Prediction)</h3>
+                <p>Risk Level Prediction System using Machine Learning. This project demonstrates how a trained ML model can be integrated with a web application and deployed as a live interactive tool.</p>
+                    <a href="project1.html">
+   
+
+
+
+
+
+
+
+
+
+
+                <button>View Project</button>
+                </a>
+            </div>
+            <div class="card">
+                <h3>Netflix Content Analysis Dashboard</h3>
+                <p>Interactive Tableau dashboard for Visualize Netflix content data.</p>
+                <a href="project2.html">
+   
+                <button>View Project</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>My Certificates</h2>
+        <div class="card">
+            <img src="C:\Users\YASHWITHA\Downloads\cert1.jpg.jpeg" class="cert-img" onclick="openImage(this.src)">
+        <h3>Software Engineering and Agile software dvelopement</h3>
+        <p>Issued by Infosys Sringboard</p>
+        </div>
+         <div class="card">
+            <img src="C:\Users\YASHWITHA\OneDrive\Pictures\Screenshots\Screenshot 2026-05-01 225930.png" class="cert-img" onclick="openImage(this.src)">
+        <h3>0 Level-Python Language</h3>
+        <p>Issued by NIELIT(National Institute of Electronics and Information Technology on NDU.DIGITAL</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email :<a href="yashwitha829@gmail.com">yashwitha829@gmail.com</a></p>
+            <p>LinkedIn profile<a href="https://www.linkedin.com/in/yashwitha-n-l-aa581126a" target="_blank">
+            View Profile</a></p>
+            <p>Github 
+                <a href="https://github.com/yashwitha-gwd" target="_blank">View Github profile</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name | Portfolio</p>
+    </footer>
+    <div id="imageModal" class="modal" onclick="closeImage()">
+      <span class="close-btn" onclick="closeImage()">×</span>
+      <img id="modalImg">
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("modalImg").src = src;
+        }
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+            }
+    </script>
+
+</body>
+
+</html>

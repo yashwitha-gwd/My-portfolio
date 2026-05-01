@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Content Analysis Dashboard</title>
+
+<style>
+    body {
+        font-family: Arial;
+        margin: 40px;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    h1, h2 {
+        color: #444;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        background: #5a67d8;
+    }
+    img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Netflix Content Analysis Dashboard</h1>
+
+                <p>Interactive Tableau dashboard for Visualize Netflix content data.</p>
+
+
+</p>
+
+<h2> Problem Statement</h2>
+<p>Exploring Netflix content Data
+</p>
+
+<h2> Project Overview</h2>
+<p>Designed an interactive dashboard using *Tableau* to explore and visualize Netflix content data.
+</p>
+
+<h2>ashboard Feautures</h2>
+<p><br>
+* Interactive visuals for better data exploration<br>
+* Country-level mapping of content<br>
+* Genre and director insights<br>
+* Time-based analysis of titles added and released<br>
+</p>
+
+<h2> Results</h2>
+<p>This dashboard showcases my ability to present data in a clear, interactive, and insight-driven manner using data visualization techniques
+</p>
+
+<h2> Project Screenshots</h2>
+<img src="C:\Users\YASHWITHA\OneDrive\Pictures\Screenshots\Screenshot 2026-03-24 003306.png" class="project-img onclick="openImage(this.src)">
+
+
+
+<br>
+
+<a href="index.html" class="btn">⬅ Back to Portfolio</a>
+
+</div>
+<div id="imageModal" class="modal" onclick="closeImage()">
+    <img id="modalImg">
+</div>
+<script>
+function openImage(src) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImg").src = src;
+}
+
+function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
